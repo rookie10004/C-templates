@@ -1,7 +1,8 @@
-#include <stdio.h>
-#define size (5)
+#include "queue.h"
 
 typedef enum { false, true } boolean;
+
+#define size 5
 
 int enqueue(int a[], int value, int* IN, int OUT, boolean* empty)
 {
@@ -35,11 +36,3 @@ int dequeue(int a[], int* value, int IN, int* OUT, boolean* empty)
         return 0;
     }
 }
-
-/*  
-    int a[]  = Queue array
-    int value = value to save
-    int IN = anchor end
-    int OUT = anchor start
-    boolean empty = boolean for empty or not
-*/
